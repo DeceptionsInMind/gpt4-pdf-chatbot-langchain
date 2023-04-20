@@ -11,7 +11,7 @@ const filePath = 'docs/MorseVsFrederick.pdf';
 export const run = async () => {
   try {
     /*load raw docs from the pdf file in the directory */
-    const loader = new CustomPDFLoader(filePath);
+    const loader = new PDFLoader (filePath);
     // const loader = new PDFLoader(filePath);
     const rawDocs = await loader.load();
 
